@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header.jsx';
+import Hooder from './components/hooder.jsx';
+import Top from './components/top.jsx';
+import Activities from './components/activities.jsx';
+import OrganizationChart from './components/organization_chart.jsx';
+import Menbers from './components/menbers.jsx';
+import Groups from './components/paticipatingGroups';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="page">
+    <Header/>
+    <Top/>
+    <Activities/>
+    <OrganizationChart/>
+    <Menbers/>
+    <Groups/>
+    <Hooder/>
     </div>
   );
 }
